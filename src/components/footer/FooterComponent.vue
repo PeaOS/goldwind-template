@@ -5,15 +5,10 @@
       <div class="text-white text-xs mb-3">
         Copyright 2016 GOLDWIN inc. All Right Reserved.
       </div>
-      <div class="text-white text-base">GOLDWIN INC</div>
+      <div class="text-white text-base">@ GOLDWIN INC</div>
     </div>
     <div>
-      <img
-        class="mt-4"
-        style="object-fit: cover"
-        src="../../assets/header/logo.png"
-        alt=""
-      />
+
     </div>
   </div>
 </template>
@@ -27,6 +22,6 @@ export default {
 <style scoped>
 .footer {
   height: 85px;
-  background-color: black;
+  background-color: #3B4043;
 }
 </style>

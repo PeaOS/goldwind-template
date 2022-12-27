@@ -1,49 +1,53 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.btn-black {
-  @apply bg-black text-white text-center py-1 px-4 w-40;
-}
-
-.btn-white {
-  @apply bg-white text-black text-center py-1 px-4 w-40 border-solid border-2;
-}
 
 .itms-pg-hd {
-  @apply flex flex-col my-10 max-w-2xl border-solid border-b-4 border-black ;
+    @apply flex flex-col my-10 max-w-2xl border-solid border-b-4 border-black ;
 }
 
 
 @font-face {
-  font-family: 'YuGothL';
-  src: url('/fonts/YuGothL.ttc') format('truetype');
+    font-family: 'YuGothL';
+    src: url('/fonts/YuGothL.ttc') format('truetype');
 }
+
 @font-face {
-  font-family: 'YuGothR';
-  src: url('/fonts/YuGothR.ttc') format('truetype');
+    font-family: 'YuGothR';
+    src: url('/fonts/YuGothR.ttc') format('truetype');
 }
+
 @font-face {
-  font-family: 'YuGothB';
-  /*src: url('/fonts/YuGothB.ttc') format('truetype');*/
-  src: url('/fonts/YuGothB.ttc') format('truetype');
+    font-family: 'YuGothB';
+    /*src: url('/fonts/YuGothB.ttc') format('truetype');*/
+    src: url('/fonts/YuGothB.ttc') format('truetype');
 }
+
 @font-face {
-  font-family: 'HelveticaL';
+    font-family: 'HelveticaL';
 //src: url('/fonts/HelveticaLt.ttf') format('truetype');
-  src: url('/fonts/helvetica_light.ttf') format('truetype');
+    src: url('/fonts/helvetica_light.ttf') format('truetype');
 }
+
 @font-face {
-  font-family: 'HelveticaR';
-  src: url('/fonts//Helvetica.ttc') format('truetype');
+    font-family: 'HelveticaR';
+    src: url('/fonts//Helvetica.ttc') format('truetype');
 }
+
 @font-face {
-  font-family: 'HelveticaB';
-  src: url('/fonts/Helvetica-Bold-Font.ttf') format('truetype');
+    font-family: 'HelveticaB';
+    src: url('/fonts/Helvetica-Bold-Font.ttf') format('truetype');
 }
 
 @layer base {
-  html {
+    html {
 
-  }
+    }
+}
+.text-default {
+    @apply text-[#8b97a0];
+}
+
+.text-title-default {
+    @apply text-[#839199];
 }

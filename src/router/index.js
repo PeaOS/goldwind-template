@@ -1,20 +1,21 @@
 import { createRouter, createWebHistory } from "vue-router";
 import DesignView from "../views/design/DesignView.vue";
-import ListPage from "../views/ListPage.vue";
+// import ListPage from "../views/ListPage.vue";
 import LogoEditorComponent from "../views/design/component/LogoEditorComponent.vue";
 import LogoPage from "../views/LogoPage.vue";
 import ItemsPage from "../views/ItemsPage.vue"
 
 import StampComponent from "../views/design/component/StampComponent.vue";
 import MyTemplateComponent from "../views/design/component/MyTemplateComponent.vue";
+import ViewProductList from "../views/products/ViewProductList.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
-      name: "ListPage",
-      component: ListPage,
+      name: "ProductList",
+      component: ViewProductList,
     },
     {
       path: "/logo-page",
