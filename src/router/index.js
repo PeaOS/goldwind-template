@@ -3,11 +3,12 @@ import DesignView from "../views/design/DesignView.vue";
 // import ListPage from "../views/ListPage.vue";
 import LogoEditorComponent from "../views/design/component/LogoEditorComponent.vue";
 import LogoPage from "../views/LogoPage.vue";
-import ItemsPage from "../views/ItemsPage.vue"
+import ItemsPage from "../views/ItemsPage.vue";
 
 import StampComponent from "../views/design/component/StampComponent.vue";
 import MyTemplateComponent from "../views/design/component/MyTemplateComponent.vue";
 import ViewProductList from "../views/products/ViewProductList.vue";
+import ViewProductDetail from "../views/products/ViewProductDetail.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -18,9 +19,9 @@ const router = createRouter({
       component: ViewProductList,
     },
     {
-      path: "/logo-page",
-      name: "LogoPage",
-      component: LogoPage,
+      path: "/product-detail",
+      name: "product-detail",
+      component: ViewProductDetail,
     },
     {
       path: "/design",
@@ -42,7 +43,6 @@ const router = createRouter({
           name: "my-template",
           component: MyTemplateComponent,
         },
-
       ],
     },
     {

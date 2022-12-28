@@ -1,8 +1,8 @@
 <template>
-  <div class="cart">
+  <div class="cart" @click="handleGoToDetail">
     <div class="thumbnail">
       <img
-        class="object-fill"
+        class="object-contain"
         height="100%"
         width="100%"
         src="/src/assets/direct.jpg"
@@ -48,6 +48,12 @@
 <script>
 export default {
   name: "ProductCartItem",
+
+  methods: {
+    handleGoToDetail() {
+      this.$router.push({ name: "product-detail" });
+    },
+  },
 };
 </script>
 

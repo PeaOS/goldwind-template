@@ -51,3 +51,11 @@
 .text-title-default {
     @apply text-[#839199];
 }
+
+.bg-default {
+    @apply bg-[#707F89];
+}
+
+.bg-gray-default {
+    @apply bg-[#CDD6DD];
+}

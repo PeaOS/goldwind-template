@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="head h-full flex items-center justify-center">
-      <h3 class="font-bold">対象商品一覧</h3>
+    <div class="h-[100px] bg-[#F0F3F5] flex items-center justify-center">
+      <h3 class="font-bold text-default">対象商品一覧</h3>
     </div>
     <div class="filters w-full px-4 py-7">
       <div class="filter w-full flex justify-between mb-3">
@@ -67,7 +67,7 @@
     </div>
     <div class="w-full flex justify-center py-5 mb-60">
       <button
-        class="py-2.5 px-7 rounded-full bg-[#707F89] text-white font-semibold"
+        class="py-2.5 px-7 rounded-full bg-default text-white font-semibold"
       >
         さらに表
       </button>

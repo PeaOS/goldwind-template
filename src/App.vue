@@ -15,8 +15,4 @@ import HeaderComponent from "./components/header/HeaderComponent.vue";
   <FooterComponent />
 </template>
 
-<style scoped>
-.page-min-height {
-  min-height: calc(100vh - 149px);
-}
-</style>
+<style scoped></style>
