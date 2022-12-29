@@ -11,11 +11,11 @@
           <span class="text-white bg-default rounded-full px-3 py-1">1</span>
           <h3 class="font-bold text-default absolute w-full">対象商覧</h3>
         </div>
-        <div class="h-[3px] w-8 rounded-xl bg-gray-default"></div>
+        <div class="h-[3px] w-6 rounded-xl bg-gray-default"></div>
         <span class="text-white bg-gray-default rounded-full px-3 py-1">2</span>
-        <div class="h-[3px] w-8 rounded-xl bg-gray-default"></div>
+        <div class="h-[3px] w-6 rounded-xl bg-gray-default"></div>
         <span class="text-white bg-gray-default rounded-full px-3 py-1">3</span>
-        <div class="h-[3px] w-8 rounded-xl bg-gray-default"></div>
+        <div class="h-[3px] w-6 rounded-xl bg-gray-default"></div>
         <span class="text-white bg-gray-default rounded-full px-3 py-1">4</span>
       </div>
     </div>
@@ -136,6 +136,7 @@
 
       <div class="w-full flex flex-col gap-y-3 items-center py-5 mt-5 mb-14">
         <button
+          @click="handleGoSelectArea"
           class="py-2.5 px-7 rounded-full bg-default text-white font-semibold"
         >
           この商品をデザインする
@@ -220,6 +221,11 @@ export default {
         mouseDrag: false,
       },
     };
+  },
+  methods: {
+    handleGoSelectArea() {
+      this.$router.push({ name: "select-area" });
+    },
   },
 };
 </script>

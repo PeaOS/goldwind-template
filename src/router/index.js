@@ -1,14 +1,15 @@
 import { createRouter, createWebHistory } from "vue-router";
-import DesignView from "../views/design/DesignView.vue";
-// import ListPage from "../views/ListPage.vue";
 import LogoEditorComponent from "../views/design/component/LogoEditorComponent.vue";
-import LogoPage from "../views/LogoPage.vue";
 import ItemsPage from "../views/ItemsPage.vue";
 
 import StampComponent from "../views/design/component/StampComponent.vue";
 import MyTemplateComponent from "../views/design/component/MyTemplateComponent.vue";
 import ViewProductList from "../views/products/ViewProductList.vue";
 import ViewProductDetail from "../views/products/ViewProductDetail.vue";
+import ViewSelectArea from "../views/products/ViewSelectArea.vue";
+import ViewSelectFormat from "../views/products/ViewSelectFormat.vue";
+import ViewSelectStamp from "../views/products/ViewSelectStamp.vue";
+import ViewDesignLogo from "../views/products/ViewDesignLogo.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,9 +25,24 @@ const router = createRouter({
       component: ViewProductDetail,
     },
     {
+      path: "/select-area",
+      name: "select-area",
+      component: ViewSelectArea,
+    },
+    {
+      path: "/select-format",
+      name: "select-format",
+      component: ViewSelectFormat,
+    },
+    {
+      path: "/select-stamp",
+      name: "select-stamp",
+      component: ViewSelectStamp,
+    },
+    {
       path: "/design",
       name: "design",
-      component: DesignView,
+      component: ViewDesignLogo,
       children: [
         {
           path: "editor",
