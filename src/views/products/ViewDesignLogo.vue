@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="relative pb-14">
     <div class="h-[100px] bg-[#F0F3F5] relative">
       <div
         class="back absolute top-4 left-5 bg-gray-default text-default rounded-full px-3 py-1"
@@ -145,9 +145,9 @@
         </div>
       </div>
     </div>
-    <div class="w-full flex flex-col gap-y-5 items-center py-5 mt-5 mb-14">
+    <div class="w-full flex flex-col gap-y-5 items-center py-5 mt-5">
       <button
-        @click="handleGoSelectFormat"
+        @click="handleToSeePreview"
         class="w-3/4 py-2.5 px-7 rounded-full bg-default text-white font-semibold"
       >
         プリントプレビュー
@@ -165,17 +165,26 @@
         フォーマット選択に戻る
       </button>
     </div>
+
+    <div class="absolute inset-0 opacity-80 bg-gray-200"></div>
+    <div class="absolute top-[10%] sm:left-[10%] md:left-1/3 z-50">
+      <ModalPreviewLogo id="modal-1"></ModalPreviewLogo>
+    </div>
   </div>
+  <!--      <div class="h-full w-full absolute bg-gray-100 opacity-75"></div>-->
 </template>
 
 <script>
 import { fabric } from "fabric";
+import ModalPreviewLogo from "./components/ModalPreviewLogo.vue";
 
 export default {
   name: "ViewDesignLogo",
+  components: { ModalPreviewLogo },
 
   data() {
     return {
+      isShowPreview: true,
       canvas: null,
     };
   },
@@ -191,6 +200,8 @@ export default {
     handleBackToSelectArea() {
       this.$router.push({ name: "select-area" });
     },
+
+    handleToSeePreview() {},
   },
 };
 </script>

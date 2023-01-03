@@ -8,6 +8,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@iconify/vue": "^4.0.2",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.2",
     "fabric": "^5.2.4",

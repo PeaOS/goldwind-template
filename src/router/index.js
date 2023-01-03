@@ -10,6 +10,8 @@ import ViewSelectArea from "../views/products/ViewSelectArea.vue";
 import ViewSelectFormat from "../views/products/ViewSelectFormat.vue";
 import ViewSelectStamp from "../views/products/ViewSelectStamp.vue";
 import ViewDesignLogo from "../views/products/ViewDesignLogo.vue";
+import ViewSelectImage from "../views/products/ViewSelectImage.vue";
+import ViewConfirmDesign from "../views/products/ViewConfirmDesign.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,6 +40,16 @@ const router = createRouter({
       path: "/select-stamp",
       name: "select-stamp",
       component: ViewSelectStamp,
+    },
+    {
+      path: "/select-image",
+      name: "select-image",
+      component: ViewSelectImage,
+    },
+    {
+      path: "/confirm-design",
+      name: "confirm-design",
+      component: ViewConfirmDesign,
     },
     {
       path: "/design",

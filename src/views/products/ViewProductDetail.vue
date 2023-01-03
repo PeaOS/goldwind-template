@@ -2,9 +2,14 @@
   <div>
     <div class="h-[100px] bg-[#F0F3F5] relative">
       <div
-        class="back absolute top-4 left-5 bg-gray-default text-default rounded-full px-3 py-1"
+        class="back absolute top-4 left-5 bg-gray-default text-default rounded-full p-1.5"
       >
-        B
+        <Icon
+          icon="ic:outline-arrow-back-ios"
+          color="#7e8c96"
+          width="20"
+          height="20"
+        />
       </div>
       <div class="w-full h-2/3 step flex justify-center items-center">
         <div class="relative">
@@ -204,10 +209,12 @@
 import { ImageModel } from "../../assets/index";
 import { VueperSlides, VueperSlide } from "vueperslides";
 import "vueperslides/dist/vueperslides.css";
+import { Icon } from "@iconify/vue";
 
 export default {
   name: "ViewProductDetail",
   components: {
+    Icon,
     VueperSlides,
     VueperSlide,
   },
